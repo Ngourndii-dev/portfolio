@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.navbar-brand{
+  font-weight: 900;
+}
+.nav-link{
+  font-weight: 500;
+}
+#contact{
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.input-div{
+  width: 80%;
+  margin: 0 auto;
+}
+.input-nationality{
+  width: 60%;
+  margin: 0 auto;
+}
