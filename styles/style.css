@@ -10,6 +10,9 @@
 .navbar-brand{
   font-weight: 900;
 }
+h1{
+  text-align: center;
+}
 .nav-link{
   font-weight: 500;
 }
@@ -26,4 +29,12 @@
 .input-nationality{
   width: 60%;
   margin: 0 auto;
+}
+.deploiment{
+  color: white;
+  text-decoration: none;
+}
+.deploiment:hover{
+  color: black;
+  scale: 1.1;
 }
