@@ -137,14 +137,29 @@ strong {
 }
 
 .section-title {
-  background: var(--section-bg-color);
+  color: var(--text-primary); 
   border-radius: var(--border-radius-large);
-  display: inline-block;
+  padding: clamp(1rem, 2.5vw, 1.25rem);
+  margin-bottom: calc(var(--spacing-unit) * 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 2;
-  margin-bottom: 0;
-  padding: 10px 25px;
-  text-align: center;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+#project-style{
+  color: white;
+}
+.nous{
+  color: #4a148c;
+}
+.section-title:hover {
+  transform: translateY(-2px);
 }
 
 .section-padding {
@@ -228,8 +243,7 @@ main {
   CAROUSEL        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/templatemo-wave-banner.jpg'), linear-gradient(#348CD2, #FFFFFF);
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #0e082c, #1a237e, #4a148c);
   background-size: 108% 76%;
   background-position: top;
   padding-top: 200px;
@@ -317,7 +331,7 @@ main {
 .team-thumb .social-icon-item,
 .team-thumb .social-icon-link {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   margin-left: auto;
 }
 
