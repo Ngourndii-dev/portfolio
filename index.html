@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -266,14 +266,17 @@
                                     <option value="3">English</option>
                                 </select>
                             </div>
-        
-                            <!-- Message -->
                             <div class="mb-4">
                                 <label for="message" class="form-label text-muted">Content's message</label>
                                 <textarea class="form-control" id="message" rows="4" required></textarea>
                             </div>
         
-                            <button type="submit" class="btn btn-primary w-100">Send</button>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="submit" class="btn btn-primary custom-btn shadow-lg">
+                                    <span class="btn-label">Send</span>
+                                    <i class="bi bi-send-fill ms-2"></i>
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -295,7 +298,7 @@
                 <div class="col-md-4 text-center">
                     <h5 class="mb-3">Social network</h5>
                     <div class="social-links">
-                        <a href="#" class="btn btn-outline-light mx-1" data-aos="zoom-in" data-aos-delay="100">
+                        <a href="" class="btn btn-outline-light mx-1" data-aos="zoom-in" data-aos-delay="100">
                             <i class="bi bi-linkedin"></i>
                         </a>
                         <a href="https://github.com/Ngourndii-dev" class="btn btn-outline-light mx-1" data-aos="zoom-in" data-aos-delay="200">
@@ -316,7 +319,7 @@
             </button>
         </div>
     </footer>
-    
+    <script src="./script.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         AOS.init({

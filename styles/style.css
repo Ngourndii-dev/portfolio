@@ -6,6 +6,7 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
+
 a{
   text-decoration: none;
   color: white;
@@ -39,7 +40,30 @@ h1{
 #contact {
     background-color: #f8f9fa;
 }
+.custom-btn {
+  background-color: #001a33;
+  border-color: #00264d;
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
 
+.custom-btn:hover {
+  background-color: #00264d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 38, 77, 0.4);
+}
+
+.custom-btn:active {
+  transform: translateY(0);
+}
+
+.btn-label {
+  letter-spacing: 0.5px;
+}
 .section-title {
     font-size: 2rem;
     font-weight: bold;
