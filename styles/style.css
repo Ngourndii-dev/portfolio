@@ -1,45 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
-  
 }
-main{
-  margin: 0 auto;
-  width: 80%;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
-.navbar-brand{
+
+section, #about, #service, #contact, #project {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+}
+
+#about::before, #service::before, #contact::before, #project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/fond.png) no-repeat center center/cover fixed;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+#about, #service, #contact, #project {
+  z-index: 1;
+}
+
+#cv {
+  text-decoration: none;
+}
+
+#cv:hover {
+  color: white;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+}
+
+.navbar-brand {
   font-weight: 900;
 }
-h1{
+
+h1 {
   text-align: center;
 }
-.nav-link{
+
+.nav-link {
   font-weight: 500;
 }
-.deploiment{
+
+.deploiment {
   color: white;
   text-decoration: none;
 }
-.deploiment:hover{
+
+.deploiment:hover {
   color: black;
   scale: 1.1;
 }
-#project{
-  background-color: white;
+
+#project {
   border-radius: 50px;
 }
-#contact {
-    background-color: #f8f9fa;
-}
+
 .custom-btn {
   background-color: #001a33;
   border-color: #00264d;
@@ -64,30 +105,31 @@ h1{
 .btn-label {
   letter-spacing: 0.5px;
 }
+
 .section-title {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .text-primary {
-    color: #007bff;
+  color: #007bff;
 }
 
 .text-secondary {
-    color: #6c757d;
+  color: #6c757d;
 }
 
 .form-floating .form-control {
-    border: 1px solid #ced4da;
+  border: 1px solid #ced4da;
 }
 
 .form-floating .form-control:focus {
-    border-color: #007bff;
-    box-shadow: none;
+  border-color: #007bff;
+  box-shadow: none;
 }
 
 .form-label {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .btn-primary {
@@ -120,6 +162,7 @@ h1{
 
 footer {
   font-family: 'Nunito Sans', sans-serif;
+  width: 100%;
 }
 
 .social-links a {
@@ -139,20 +182,24 @@ footer {
   display: none;
   z-index: 99;
 }
+
 .mb-3 {
   color: white;
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.2;
 }
-.title-service{
+
+.title-service {
   color: black;
   text-decoration: none;
 }
-.title-service:hover{
+
+.title-service:hover {
   cursor: pointer;
   color: black;
 }
+
 .service-card {
   background: white;
   border-radius: 10px;
@@ -179,6 +226,7 @@ footer {
 .service-card:hover i {
   color: white;
 }
+
 .project-card {
   position: relative;
   overflow: hidden;
@@ -188,7 +236,7 @@ footer {
 
 .project-card img {
   width: 100%;
-  height: 250px; /* Ajustez selon votre besoin */
+  height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -227,6 +275,7 @@ footer {
 .project-overlay p {
   font-size: 14px;
 }
+
 .project-overlay ul {
   list-style: none;
   padding: 0;
@@ -247,12 +296,55 @@ footer {
   font-size: 14px;
   font-weight: bold;
   color: white;
-  background: rgba(255, 255, 255, 0.2); 
+  background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease-in-out;
 }
 
 .project-overlay ul li a:hover {
   background: white;
   color: black;
+}
+.skill-card {
+  transition: all 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.hover-shadow-lg:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #01204e;
+  color: white !important;
+}
+
+.icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .icon-wrapper {
+  transform: scale(1.1);
+}
+.filter-btn {
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #0d1b2a !important;
+  color: #ffffff !important;
+  border-color: #0d1b2a !important;
+}
+
+.filter-btn:hover {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  border-color: #0d1b2a;
 }
 
