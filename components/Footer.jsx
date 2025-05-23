@@ -57,7 +57,7 @@ export default function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://github.com/Ngourndii-dev"
+                href="https://github.com/Niainah"
                 className={`p-3 rounded-full transition-all duration-200 ${
                   theme === 'dark' ? 'bg-gray-700/50 hover:bg-blue-500' : 'bg-gray-200 hover:bg-blue-400'
                 } transform hover:scale-110`}
