@@ -1,1 +1,39 @@
-.vercel
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+.vercel 
+/build
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env*.local
+
+# Next.js build cache
+.next/cache/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/VSCode
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Misc
+package-lock.json
+yarn.lock
