@@ -35,5 +35,4 @@ Thumbs.db
 *.sublime-workspace
 
 # Misc
-package-lock.json
 yarn.lock
